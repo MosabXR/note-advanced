@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Project</title>
+</head>
+
+<body>
+  <header class="bg-dark border-bottom border-black">
+    <nav class="text-white d-flex flex-column align-items-center py-4">
+      <div class="logo">
+        <h1 class="h2 m-0 text-uppercase">Notey</h1>
+      </div>
+      <div class="color-selector d-flex gap-3 pt-4">
+        <button id="bg-primary-subtle" class="btn btn-primary btn-circle"></button>
+        <button id="bg-danger-subtle" class="btn btn-danger btn-circle"></button>
+        <button id="bg-warning-subtle" class="btn btn-warning btn-circle"></button>
+        <button id="bg-success-subtle" class="btn btn-success btn-circle"></button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="min-vh-100 bg-dark overflow-x-hidden py-3">
+      <div class="container">
+        <div class="note-operations py-3 d-flex gap-2">
+          <button class="btn btn-primary"><i class="fa-regular fa-plus"></i></button>
+          <button class="btn btn-success"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+          <input type="text" class="form-control">
+        </div>
+        <div class="row g-2">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 d-block">
+            <div class="note overflow-hidden bg-body-tertiary rounded-2 position-relative">
+              <form>
+                <textarea class="w-100 border-0 bg-body-tertiary p-4" maxlength="455"></textarea>
+                <div class="options-buttons position-absolute w-100 bottom-0 d-flex">
+                  <button type="button" class="btn btn-danger flex-grow-1 rounded-0">هتكلسن</button>
+                  <button type="submit" class="btn btn-success flex-grow-1 rounded-0">رد</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="note overflow-hidden bg-primary-subtle rounded-2 p-2 pt-5 position-relative">
+              <div class="note-options position-absolute top-0 start-0 w-100 d-flex justify-content-between align-items-center p-2">
+                <div class="date text-primary">
+                  <span><i class="fa-regular fa-calendar-days"></i> 7/6/2024</span>
+                </div>
+                <div class="options bg-primary d-flex gap-0 rounded">
+                  <button class="btn btn-primary border-0 ">
+                    <i class="fa-solid fa-pen text-white"></i>
+                  </button>
+                  <button class="btn btn-primary border-0 ">
+                    <i class="fa-regular fa-heart text-white"></i>
+                  </button>
+                  <button class="btn btn-primary border-0 ">
+                    <i class="fa-solid fa-xmark text-white"></i>
+                  </button>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fuga commodi earum dolores corporis, eos sed aliquid tempore. Aut earum sint neque, quaerat ab non quod exercitationem? Est rem, esse dolor et cum quis error non. A sed quis facere?</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="note overflow-hidden bg-danger-subtle rounded-2 p-2 pt-5 position-relative">
+              <div class="note-options position-absolute top-0 start-0 w-100 d-flex justify-content-between align-items-center p-2">
+                <div class="date text-danger">
+                  <span><i class="fa-regular fa-calendar-days"></i> 7/6/2024</span>
+                </div>
+                <div class="options bg-danger d-flex gap-0 rounded">
+                  <button class="btn btn-danger border-0 ">
+                    <i class="fa-solid fa-ellipsis text-white"></i>
+                  </button>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fuga commodi earum dolores corporis, eos sed aliquid tempore. Aut earum sint neque, quaerat ab non quod exercitationem? Est rem, esse dolor et cum quis error non. A sed quis facere?</p>
+              <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique temporibus numquam! Optio molestiae explicabo ipsam quod pariatur, ut ipsa impedit autem. Quaerat repellat unde a soluta! Facilis minus ducimus qui, atque eos doloribus modi, eum quas laudantium porro cupiditate. Quis, debitis. Facere sit ad at, sint, hic minus aut accusantium voluptatibus cumque laboriosam aliquid dolorem, delectus aliquam voluptate praesentium corrupti vel odit modi facilis dolorum. Pariatur quod nemo dolor blanditiis consectetur voluptate? Provident at commodi tenetur eaque illo corporis praesentium amet laborum, quasi fugit doloremque consectetur! Veritatis et aliquam veniam perferendis odio dignissimos nulla! Ut magni quibusdam ex molestias?</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
